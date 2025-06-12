@@ -153,3 +153,25 @@ ul.list-two,
     height: 3rem;
     fill: currentColor;
   }
+
+  .article {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .trending {
+    grid-column-start: -2;
+    grid-row-start: -2;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    grid-row: 1 / span 2;
+  }
+
+  .projects-header {
+    grid-column: span 2;
+  }
